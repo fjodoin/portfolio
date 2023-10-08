@@ -14,7 +14,7 @@ class Home extends React.Component {
                     </div>
                 
                 <p>
-                    wannabe-Bug Bounty Hunter.
+                    🐛 wannabe-Bug Bounty Hunter 🧹
                 </p>
                 </header>
             </div>
