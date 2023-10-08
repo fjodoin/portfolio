@@ -6,15 +6,22 @@ class Contact extends React.Component {
         return (
             <div className="App">
                 <header className="App-header">
-                <p>
-                    This is the CONTACT page.
-                </p>
+                    <h2>Contact Me</h2>
+                    <main>
+                        <p>
+                            📧 
+                            <a
+                                className='Email-link'
+                                href='mailto: fjodoin@protonmail.com'
+                            >
+                            Email
+                            </a>
+                        </p>
+                    </main>
                 </header>
             </div>
-            
         );
     }
-
 }
 
 export default Contact;

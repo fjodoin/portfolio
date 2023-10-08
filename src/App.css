@@ -1,31 +1,69 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Your existing styles for input and textarea here */
+
+.profileLogo img {
+  width: 200px; /* Adjust the width as needed */
+  height: auto;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 200px; /* Adjust the width and height as needed */
+  height: 200px;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25%; /* Make it circular */
+  opacity: 0.25;
+  filter: invert(100%);
+}
+
+.overlay-image svg {
+  fill:  white; /* Set the fill color to white */
+}
+
+.App {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    width: 100%; /* Set the inner image width to 100% to fit within the container */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    pointer-events: none;
+    filter: invert(66%);
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #121011;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #d7fb10;
 }
 
-.App-link {
-  color: #61dafb;
+.Email-link {
+  color: #0097ee;
+}
+
+.CV-link {
+  color: #0097ee;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +73,48 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: gray;
+}
+
+.navLogo img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.navLogo {
+  margin-right: 40px;
+  transform: scale(2.0);
+}
+
+/* Add these styles to your CSS file */
+#navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: gray;
+}
+
+#navigation li {
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: #d7fb10;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+#navigation a:hover {
+  color: #7c36ff; /* Change to your desired hover color */
 }

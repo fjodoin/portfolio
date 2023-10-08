@@ -8,8 +8,8 @@ import Home from './Home';
 function App() {
   return (
     <div>
-      <div>
-        <nav>
+      <header className="header">
+      <nav className="navbar">
           <ul id="navigation">
             <li>
               <Link to="/">Home</Link>
@@ -21,8 +21,11 @@ function App() {
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
+          <div className="navLogo">
+            ᓚᘏᗢ
+          </div>
         </nav>
-      </div>
+      </header>
       <Routes> {/* Wrap your Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
