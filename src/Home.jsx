@@ -18,22 +18,22 @@ class Home extends React.Component {
                                 <table className="skills-table">
                                     <thead>
                                         <tr>
-                                            <th>Skill</th>
+                                            <th>Skills</th>
                                             <th>Details</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Offensive Cloud Security (🔴)</td>
-                                            <td>Assumed Breach</td>
+                                            <td>🔴 Offensive Cloud Security</td>
+                                            <td>Assumed Breach Penetration Testing (Red Teaming: TBD)</td>
                                         </tr>
                                         <tr>
-                                            <td>Defensive Cloud Security (🔵)</td>
-                                            <td>Alert & Monitoring</td>
+                                            <td>🔵 Defensive Cloud Security</td>
+                                            <td>SIEM, Alert & Monitoring Strategies</td>
                                         </tr>
                                         <tr>
-                                            <td>Heuristic Cloud Security (🟣)</td>
-                                            <td>Attack Surface Hardening</td>
+                                            <td>🟣 Integrated Cloud Security</td>
+                                            <td>Purple Teaming, SOC Enhancements</td>
                                         </tr>
                                     </tbody>
                                 </table>
