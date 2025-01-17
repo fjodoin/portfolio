@@ -1,11 +1,10 @@
 /* App.css */
-/* Your existing styles for input and textarea here */
 .profileLogo img {
     width: 200px; /* Adjust the width as needed */
     height: auto;
     align-items: center;
-  }
-  .image-container {
+}
+.image-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,8 +12,8 @@
     width: 200px; /* Adjust the width and height as needed */
     height: 200px;
     margin: 0 auto; /* Center the container horizontally */
-  }
-  .overlay-image {
+}
+.overlay-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -23,105 +22,100 @@
     border-radius: 25%; /* Make it circular */
     opacity: 0.25;
     filter: invert(100%);
-  }
-  .overlay-image svg {
-    fill:  white; /* Set the fill color to white */
-  }
-  .App {
+}
+.overlay-image svg {
+    fill: white; /* Set the fill color to white */
+}
+.App {
     text-align: center;
-  }
-  @media (prefers-reduced-motion: no-preference) {
+}
+@media (prefers-reduced-motion: no-preference) {
     .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-      width: 100%; /* Set the inner image width to 100% to fit within the container */
-      height: auto; /* Automatically adjust the height to maintain aspect ratio */
-      pointer-events: none;
-      filter: invert(66%);
+        animation: App-logo-spin infinite 20s linear;
+        width: 100%; /* Set the inner image width to 100% to fit within the container */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+        pointer-events: none;
+        filter: invert(66%);
     }
-  }
-  
-  .App-header {
-    background-color: #121011;
+}
+
+.App-header {
+    background-color: #121011; /* Dark background */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: #d7fb10;
-  }
-  
-  .Email-link {
-    color: #0097ee;
-  }
-  .CV-link {
-    color: #0097ee;
-  }
-  
-  @keyframes App-logo-spin {
+    color: #d7fb10; /* Bright yellow-green text */
+}
+
+.Email-link, .CV-link {
+    color: #0097ee; /* Blue for links */
+}
+
+@keyframes App-logo-spin {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  .navbar {
+}
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: gray;
-  }
-  
-  .navLogo img {
+    background-color: #2f2f2f; /* Darker gray for navbar */
+}
+
+.navLogo img {
     width: 100px; /* Adjust the width as needed */
     height: auto;
-  }
-  
-  .navLogo {
+}
+
+.navLogo {
     margin-right: 40px;
     transform: scale(2.0);
-  }
-  
-  /* Add these styles to your CSS file */
-  #navigation {
+}
+
+/* Updated navigation list styles */
+#navigation {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    background-color: gray;
-  }
-  
-  #navigation li {
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-  }
-  
-  #navigation a {
+    background-color: #2f2f2f; /* Dark background for navigation */
+}
+
+#navigation li {
+    margin: 10px 20px; /* Adjust margins for cleaner spacing */
+}
+
+#navigation a {
     text-decoration: none;
-    color: #d7fb10;
+    color: #d7fb10; /* Bright yellow-green text */
     font-weight: bold;
     transition: color 0.3s ease-in-out;
-  }
-  #navigation a:hover {
-    color: #7c36ff; /* Change to your desired hover color */
-  }
+}
 
-  .skills-table {
+#navigation a:hover {
+    color: #7c36ff; /* Purple for hover effect */
+}
+
+.skills-table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
     font-family: Arial, sans-serif;
     font-size: 16px;
     text-align: left;
-    background-color: #f9f9f9;
+    background-color: #121011; /* Dark background */
 }
 
 .skills-table thead {
-    background-color: #4CAF50;
+    background-color: #0097ee; /* Blue header */
     color: white;
 }
 
@@ -131,11 +125,10 @@
 }
 
 .skills-table tbody tr:nth-child(odd) {
-    background-color: #f2f2f2;
+    background-color: #2f2f2f; /* Dark row color */
 }
 
 .skills-table tbody tr:hover {
-    background-color: #ddd;
+    background-color: #7c36ff; /* Purple hover effect */
     cursor: pointer;
 }
-
