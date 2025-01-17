@@ -144,22 +144,21 @@
 }
 
 /* Add this to your App.css */
-.navbar .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .navbar .dropdown-content {
+
+/* Ensure dropdown items are wide enough */
+.navbar .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 250px; /* Increased width */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    list-style-type: none; /* Remove default bullet points */
   }
   
-  .navbar .dropdown:hover .dropdown-content {
-    display: block;
+  .navbar .dropdown-content li {
+    list-style-type: disc; /* Use filled bullet points */
+    margin: 8px 0; /* Add spacing between items */
   }
   
   .navbar .dropdown-content a {
@@ -171,5 +170,25 @@
   
   .navbar .dropdown-content a:hover {
     background-color: #ddd;
+  }
+  
+  .navbar .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  /* App.css */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  h1, p {
+    font-family: 'Arial', sans-serif;
+    color: #121011;
+  }
+  
+  .container {
+    padding: 20px;
   }
   
