@@ -40,14 +40,14 @@
 }
 
 .App-header {
-    background-color: #121011; /* Dark background */
+    background-color: #f9f9f9; /* Soft light background */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: #d7fb10; /* Bright yellow-green text */
+    color: #333; /* Dark gray text for readability */
 }
 
 .Email-link, .CV-link {
@@ -67,7 +67,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #2f2f2f; /* Darker gray for navbar */
+    background-color: #e0e0e0; /* Light gray navbar */
 }
 
 .navLogo img {
@@ -86,7 +86,7 @@
     padding: 0;
     margin: 0;
     display: flex;
-    background-color: #2f2f2f; /* Dark background for navigation */
+    background-color: #e0e0e0; /* Light gray background for navigation */
 }
 
 #navigation li {
@@ -95,7 +95,7 @@
 
 #navigation a {
     text-decoration: none;
-    color: #d7fb10; /* Bright yellow-green text */
+    color: #0097ee; /* Blue for links */
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
@@ -111,12 +111,12 @@
     font-family: Arial, sans-serif;
     font-size: 16px;
     text-align: left;
-    background-color: #121011; /* Dark background */
+    background-color: #ffffff; /* White background for the table */
 }
 
 .skills-table thead {
-    background-color: #0097ee; /* Blue header */
-    color: white;
+    background-color: #d7fb10; /* Bright yellow-green header */
+    color: #121011; /* Dark text for contrast */
 }
 
 .skills-table th, .skills-table td {
@@ -125,7 +125,7 @@
 }
 
 .skills-table tbody tr:nth-child(odd) {
-    background-color: #2f2f2f; /* Dark row color */
+    background-color: #f4f4f4; /* Light gray rows */
 }
 
 .skills-table tbody tr:hover {
