@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import logo from './logo.svg';
-import overlayLogo from './overlayLogo.svg'
+import overlayLogo from './overlayLogo.svg';
 
 class Home extends React.Component {
     render() {
@@ -12,16 +12,18 @@ class Home extends React.Component {
                         <img src={logo} className="App-logo" alt="logo" />
                         <img src={overlayLogo} className="overlay-image" alt="overlay" />
                     </div>
-                
-                <p>
-                    🐛 wannabe-Bug Bounty Hunter 🧹
-                </p>
+                    <div className="intro-text">
+                        <h1>⛅️ Cloud Ethical Hacker 🌩️</h1>
+                        <p className="skills">
+                            <span className="skill-level">(+++) Microsoft Cloud</span> (Entra, Azure, M365)<br />
+                            <span className="skill-level">(++) AWS</span><br />
+                            <span className="skill-level">(+)</span> GCP
+                        </p>
+                    </div>
                 </header>
             </div>
-            
         );
     }
-
 }
 
 export default Home;
