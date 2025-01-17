@@ -22,10 +22,9 @@
     border-radius: 25%; /* Make it circular */
     opacity: 0.50;
     filter: invert(100%);
-    color: #7c36ff; /* Purple crosshairs */
 }
 .overlay-image svg {
-    fill: white; /* Set the fill color to white */
+    fill: 7c36ff; /* Set the fill color to purple */
 }
 .App {
     text-align: center;
