@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     border-radius: 25%; /* Make it circular */
-    opacity: 0.25;
+    opacity: 0.50;
     filter: invert(100%);
 }
 .overlay-image svg {
@@ -67,7 +67,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #e0e0e0; /* Light gray navbar */
+    background-color: #6e6e6e; /* Light gray navbar */
 }
 
 .navLogo img {
@@ -86,7 +86,7 @@
     padding: 0;
     margin: 0;
     display: flex;
-    background-color: #e0e0e0; /* Light gray background for navigation */
+    background-color: #6e6e6e; /* Light gray background for navigation */
 }
 
 #navigation li {
@@ -95,7 +95,7 @@
 
 #navigation a {
     text-decoration: none;
-    color: #0097ee; /* Blue for links */
+    color: #d7fb10; /* Blue for links */
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
@@ -108,27 +108,37 @@
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
     text-align: left;
-    background-color: #ffffff; /* White background for the table */
+    background-color: #ffffff; /* White background for table */
+    border-radius: 8px; /* Rounded edges */
+    overflow: hidden; /* Ensures rounded corners work properly */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .skills-table thead {
     background-color: #d7fb10; /* Bright yellow-green header */
     color: #121011; /* Dark text for contrast */
+    font-weight: bold; /* Bold text in header */
 }
 
 .skills-table th, .skills-table td {
     padding: 12px;
     border: 1px solid #ddd;
+    font-weight: bold; /* Bold text for data */
 }
 
 .skills-table tbody tr:nth-child(odd) {
     background-color: #f4f4f4; /* Light gray rows */
 }
 
+.skills-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Slightly lighter gray for even rows */
+}
+
 .skills-table tbody tr:hover {
     background-color: #7c36ff; /* Purple hover effect */
+    color: white; /* White text on hover */
     cursor: pointer;
 }
