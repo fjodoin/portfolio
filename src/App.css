@@ -1,120 +1,73 @@
-/* App.css */
-
-/* Your existing styles for input and textarea here */
-
-.profileLogo img {
-  width: 200px; /* Adjust the width as needed */
-  height: auto;
-  align-items: center;
-}
-
-.image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 200px; /* Adjust the width and height as needed */
-  height: 200px;
-  margin: 0 auto; /* Center the container horizontally */
-}
-
-.overlay-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 25%; /* Make it circular */
-  opacity: 0.25;
-  filter: invert(100%);
-}
-
-.overlay-image svg {
-  fill:  white; /* Set the fill color to white */
-}
-
 .App {
-  text-align: center;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    width: 100%; /* Set the inner image width to 100% to fit within the container */
-    height: auto; /* Automatically adjust the height to maintain aspect ratio */
-    pointer-events: none;
-    filter: invert(66%);
-  }
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
 }
 
 .App-header {
-  background-color: #121011;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #d7fb10;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
 }
 
-.Email-link {
-  color: #0097ee;
+.image-container {
+    position: relative;
+    margin-bottom: 20px;
 }
 
-.CV-link {
-  color: #0097ee;
+.App-logo {
+    width: 120px;
+    animation: spin infinite 20s linear;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.overlay-image {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 60px;
+    opacity: 0.8;
+    z-index: 1;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: gray;
+.intro-text {
+    margin-top: 20px;
 }
 
-.navLogo img {
-  width: 100px; /* Adjust the width as needed */
-  height: auto;
+.intro-text h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.navLogo {
-  margin-right: 40px;
-  transform: scale(2.0);
+.skills {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #f0f0f0;
 }
 
-/* Add these styles to your CSS file */
-#navigation {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  background-color: gray;
+.skill-level {
+    font-weight: bold;
+    color: #ffd700;
 }
 
-#navigation li {
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
-
-#navigation a {
-  text-decoration: none;
-  color: #d7fb10;
-  font-weight: bold;
-  transition: color 0.3s ease-in-out;
-}
-
-#navigation a:hover {
-  color: #7c36ff; /* Change to your desired hover color */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
