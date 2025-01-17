@@ -13,11 +13,32 @@ class Home extends React.Component {
                         <img src={overlayLogo} className="overlay-image" alt="overlay" />
                     </div>
                         <h1>⛅️ Cloud Ethical Hacker 🌩️</h1>
-                        <p className="skills">
-                            <span className="skill-level">Microsoft Cloud</span> (Entra, Azure, M365)<br />
-                            <span className="skill-level">AWS</span><br />
-                            <span className="skill-level">Kubernetes</span>
-                        </p>
+                        <div>
+                            <div className="skills">
+                                <table className="skills-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Skill</th>
+                                            <th>Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Offensive Cloud Security (RED)</td>
+                                            <td>Assumed Breach</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Defensive Cloud Security (Blue)</td>
+                                            <td>Alert & Monitoring</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Heuristic Cloud Security (Purple)</td>
+                                            <td>Attack Surface Hardening</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                 </header>
             </div>
         );

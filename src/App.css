@@ -109,3 +109,33 @@
   #navigation a:hover {
     color: #7c36ff; /* Change to your desired hover color */
   }
+
+  .skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+.skills-table thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.skills-table th, .skills-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.skills-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.skills-table tbody tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
