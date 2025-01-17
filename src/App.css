@@ -20,11 +20,11 @@
     width: 100%;
     height: 100%;
     border-radius: 25%; /* Make it circular */
-    opacity: 0.50;
+    opacity: 0.75;
     filter: invert(100%);
 }
 .overlay-image svg {
-    fill: 7c36ff; /* Set the fill color to purple */
+    color: 7c36ff; /* Set the fill color to purple */
 }
 .App {
     text-align: center;
