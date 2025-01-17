@@ -24,15 +24,15 @@ class Home extends React.Component {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Offensive Cloud Security (RED)</td>
+                                            <td>Offensive Cloud Security (🔴)</td>
                                             <td>Assumed Breach</td>
                                         </tr>
                                         <tr>
-                                            <td>Defensive Cloud Security (Blue)</td>
+                                            <td>Defensive Cloud Security (🔵)</td>
                                             <td>Alert & Monitoring</td>
                                         </tr>
                                         <tr>
-                                            <td>Heuristic Cloud Security (Purple)</td>
+                                            <td>Heuristic Cloud Security (🟣)</td>
                                             <td>Attack Surface Hardening</td>
                                         </tr>
                                     </tbody>
